@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- Option 1: Include in HTML -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <style>
+        /* newletter */
+        @media (min-width: 768px) {
+            .newletter-input {
+                width: 50%;
+            }
+        }
+
+        /* navbar */
+        body::before {
+            display: block;
+            content: '';
+            height: 80px;
+        }
+
+        .map-container {
+            overflow: hidden;
+            padding-bottom: 56.25%;
+            position: relative;
+            height: 0;
+        }
+
+        .map-container iframe {
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+        }
+    </style>
+    <title>Frontend Bootcamp</title>
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <div class="container-fluid p-0">
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-4 fixed-top">
+            <div class="container">
+                <a href="#" class="navbar-brand">Frontend Bootcamp</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navmenu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a href="#learn" class="nav-link">What You'll learn</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#questions" class="nav-link">Questions</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#instructors" class="nav-link">Instructors</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- showcase section -->
+    <section class="bg-dark p-5 p-lg-0 pt-lg-3 text-light text-center text-sm-start">
+        <div class="container">
+            <div class="d-sm-flex align-items-center justify-content-between">
+                <div>
+                    <h1>Become a <span class="text-warning"> Web Developer</span></h1>
+                    <p class="lead my-4">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste eos ratione nam nostrum facilis velit aspernatur accusamus iure doloremque corrupti.
+                    </p>
+                    <button class="btn btn-primary btn-lg shadow-sm">Start The Enrollment</button>
+                </div>
+                <img class="img-fluid w-50 rounded d-none d-sm-block" src="./img/showcase.jpg" alt="showcase">
+            </div>
+        </div>
+    </section>
+
+    <!-- newletter -->
+    <section class="bg-primary text-light p-5">
+        <div class="container">
+            <div class="d-md-flex align-items-center justify-content-between">
+                <h3 class="mb-3 mb-md-0">Sign Up For Our Newletter</h3>
+
+                <div class="input-group newletter-input">
+                    <input type="email" name="" id="" placeholder="Enter Email" class="form-control">
+                    <button type="button" class="btn btn-dark btn-md">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- boxes -->
+    <section class="p-5">
+        <div class="container">
+            <div class="row text-center g-3">
+                <div class="col-md">
+                    <div class="card bg-dark text-light">
+                        <div class="card-body text-center">
+                            <div class="h1">
+                                <i class="bi bi-laptop"></i>
+                            </div>
+                            <h3 class="card-title mb-3">Virtual</h3>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore veritatis officia cum totam in, ipsum modi est quos fuga recusandae?
+                            </p>
+                            <a href="#" class="btn btn-primary shadow-sm">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card bg-secondary text-light">
+                        <div class="card-body text-center">
+                            <div class="h1">
+                                <i class="bi bi-person-square"></i>
+                            </div>
+                            <h3 class="card-title mb-3">Hybrid</h3>
+                            <p class="card-text">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero consequatur incidunt sed cupiditate sequi molestiae! Cumque expedita maiores reiciendis dolor!
+                            </p>
+                            <a href="#" class="btn btn-dark shadow-sm">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card bg-dark text-light">
+                        <div class="card-body text-center">
+                            <div class="h1">
+                                <i class="bi bi-people"></i>
+                            </div>
+                            <h3 class="card-title mb-3">In Person</h3>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate beatae nihil fugiat quisquam dolor maxime consequatur suscipit, sunt iste sit.
+                            </p>
+                            <a href="#" class="btn btn-primary shadow-sm">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- learn section -->
+    <section class="p-5 " id="learn">
+        <div class="container">
+            <div class="row align-items-center justify-content-bewteen">
+                <div class="col-md">
+                    <img class="img-fluid" src="./img/showcase.jpg" alt="fundamentals">
+                </div>
+                <div class="col-md p-5">
+                    <h2>Learn The Fundamentals</h2>
+                    <p class='lead'>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Odio incidunt suscipit officia esse nemo magni beatae eius vel, quae reprehenderit?
+                    </p>
+                    <p class='lead'>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Sequi id, fuga, et, consequuntur hic quas quis dolor voluptas repudiandae odit corrupti.
+                        Aperiam repellendus aliquam nemo.
+                    </p>
+                    <a href="#" class="btn btn-light mt-3 shadow-sm"><i class="bi bi-chevron-right"></i>Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="p-5  bg-dark text-light" id="learn">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md p-5">
+                    <h2>Learn Reacts</h2>
+                    <p class="lead">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Molestiae magnam dicta suscipit ipsum? Aliquam ducimus cupiditate esse dolores atque assumenda!
+                    </p>
+                    <p class="lead">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Voluptates vero dolores, cum excepturi, sint culpa nihil, facilis veritatis explicabo suscipit maxime optio ea laudantium commodi.
+                    </p>
+                    <a href="#" class="btn btn-light mt-3"><i class="bi bi-chevron-right"></i>Read More</a>
+                </div>
+                <div class="col-md">
+                    <img src="./img/showcase.jpg" alt="" class="img-fluid rounded">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- question accordion -->
+    <section class="p-5" id="questions">
+        <div class="container">
+            <h2 class="text-center mb-4 mt-5 pt-3">Frequently Asked Questions</h2>
+
+            <div class="accordion accordion-flush" id="questions">
+
+                <!-- accordion item 1 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            Where exactly are you located?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#questions">
+                        <div class="accordion-body">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Voluptatem provident ut eligendi voluptatibus! Corporis eum nulla a voluptas optio ipsam mollitia facilis error magni voluptatibus,
+                            fugiat nisi amet ducimus dolorem. Facere rerum aut ipsam libero est odio dolor,
+                            deserunt ad iste culpa, quasi quia beatae facilis consectetur, consequuntur totam aliquid.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- accordion item 2 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            What do I need to Know?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Voluptatem provident ut eligendi voluptatibus! Corporis eum nulla a voluptas optio ipsam mollitia facilis error magni voluptatibus,
+                            fugiat nisi amet ducimus dolorem. Facere rerum aut ipsam libero est odio dolor,
+                            deserunt ad iste culpa, quasi quia beatae facilis consectetur, consequuntur totam aliquid.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- accordion item 3 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                            Do you help me find a job?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Voluptatem provident ut eligendi voluptatibus! Corporis eum nulla a voluptas optio ipsam mollitia facilis error magni voluptatibus,
+                            fugiat nisi amet ducimus dolorem. Facere rerum aut ipsam libero est odio dolor,
+                            deserunt ad iste culpa, quasi quia beatae facilis consectetur, consequuntur totam aliquid.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- accordion item 4 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                            How much does it cost to attend?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Voluptatem provident ut eligendi voluptatibus! Corporis eum nulla a voluptas optio ipsam mollitia facilis error magni voluptatibus,
+                            fugiat nisi amet ducimus dolorem. Facere rerum aut ipsam libero est odio dolor,
+                            deserunt ad iste culpa, quasi quia beatae facilis consectetur, consequuntur totam aliquid.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- accordion item 5 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingFive">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                            How do I sign up?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Voluptatem provident ut eligendi voluptatibus! Corporis eum nulla a voluptas optio ipsam mollitia facilis error magni voluptatibus,
+                            fugiat nisi amet ducimus dolorem. Facere rerum aut ipsam libero est odio dolor,
+                            deserunt ad iste culpa, quasi quia beatae facilis consectetur, consequuntur totam aliquid.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- instructors section -->
+    <section id="instructors" class="p-5 bg-primary">
+        <div class="container">
+            <h2 class="text-center text-white mt-5">Our Instructors</h2>
+            <p class="lead text-center text-white mb-5">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem, minus.
+            </p>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <img src="https://randomuser.me/api/portraits/men/11.jpg" alt="" class="rounded-circle mb-3">
+                            <h3 class="card-title mb-3">John Doe</h3>
+                            <p class="card-text">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                Autem sequi facere soluta magnam, aspernatur architecto?
+                            </p>
+                            <a href="#"><i class="bi bi-twitter text-dark  mx-1"></i></a>
+                            <a href="#"><i class="bi bi-facebook text-dark  mx-1"></i></a>
+                            <a href="#"><i class="bi bi-linkedin text-dark  mx-1"></i></a>
+                            <a href="#"><i class="bi bi-instagram text-dark  mx-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <img src="https://randomuser.me/api/portraits/women/11.jpg" alt="" class="rounded-circle mb-3">
+                            <h3 class="card-title mb-3">Jane Doe</h3>
+                            <p class="card-text">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                Autem sequi facere soluta magnam, aspernatur architecto?
+                            </p>
+                            <a href="#"><i class="bi bi-twitter text-dark  mx-1"></i></a>
+                            <a href="#"><i class="bi bi-facebook text-dark  mx-1"></i></a>
+                            <a href="#"><i class="bi bi-linkedin text-dark  mx-1"></i></a>
+                            <a href="#"><i class="bi bi-instagram text-dark  mx-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <img src="https://randomuser.me/api/portraits/men/12.jpg" alt="" class="rounded-circle mb-3">
+                            <h3 class="card-title mb-3">Steve Smith</h3>
+                            <p class="card-text">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                Autem sequi facere soluta magnam, aspernatur architecto?
+                            </p>
+                            <a href="#"><i class="bi bi-twitter text-dark  mx-1"></i></a>
+                            <a href="#"><i class="bi bi-facebook text-dark  mx-1"></i></a>
+                            <a href="#"><i class="bi bi-linkedin text-dark  mx-1"></i></a>
+                            <a href="#"><i class="bi bi-instagram text-dark  mx-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <img src="https://randomuser.me/api/portraits/women/12.jpg" alt="" class="rounded-circle mb-3">
+                            <h3 class="card-title mb-3">Sarah Smith</h3>
+                            <p class="card-text">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                Autem sequi facere soluta magnam, aspernatur architecto?
+                            </p>
+                            <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi bi-facebook text-dark  mx-1"></i></a>
+                            <a href="#"><i class="bi bi-linkedin text-dark  mx-1"></i></a>
+                            <a href="#"><i class="bi bi-instagram text-dark  mx-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact and map -->
+    <section class="p-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md">
+                    <h2 class="text-center mb-4">Contact Info</h2>
+                    <div class="list-group list-group-flush lead">
+                        <li class="list-group-item">
+                            <span class="fw-bold">Main Location:</span> Malindi
+                        </li>
+                        <li class="list-group-item">
+                            <span class="fw-bold">Main Location:</span> Malindi
+                        </li>
+                        <li class="list-group-item">
+                            <span class="fw-bold">Main Location:</span> Malindi
+                        </li>
+                        <li class="list-group-item">
+                            <span class="fw-bold">Main Location:</span> Malindi
+                        </li>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <!--Google map-->
+                    <div id="map-container-google-1" class="z-depth-1-half map-container" style="width:100%; height:400px">
+                        <iframe src="https://maps.google.com/maps?q=manhatan&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+
+                    <!--Google Maps-->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="p-5 bg-dark text-center text-light position-relative">
+        <div class="container">
+            <p class="lead">Copyright &copy; 2024 Frontend Bootcamp</p>
+
+            <a href="#" class="position-absolute bottom-0 end-0 p-5">
+                <i class="bi bi-arrow-up-circle h1"></i>
+            </a>
+        </div>
+    </footer>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
